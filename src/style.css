@@ -1,6 +1,6 @@
 body{
-    background: url('bg.jpg') transparent;
-    background-size: cover;
+    background: linear-gradient(to right, #5c5ce8, #074387);
+    color:aliceblue
 }
 #search{
     margin: 1% 25%;
@@ -12,6 +12,7 @@ body{
 li{
     display: flex;
     justify-content: space-between;
+    padding: 1% 7%;
 }
 li:hover{
     background: #7f76c4;
