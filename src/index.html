@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.css">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+    <div class="container">
+        <form class="needs-validation">
+            <h4 class="mb-3">Saving Notes</h4>
+            <div class="row">
+              <div class="col-md-6 mb-3" id="search">
+                <input type="text" name="note" placeholder="Write down here..." class="form-control" id="note" value="" >
+                <div class="invalid-feedback">
+                  this is required
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary btn-lg btn-block" id="btn"  type="submit">Save Note now</button>
+            <hr class="mb-4">
+        </form>
+        <div class="notes">
+          <div class="row">
+            <div class="col-md-12" id="list-note">
+              
+            </div>
+          </div>
+        </div>
+        <div class="clear-btn">
+          <button class="btn btn-danger btn-lg btn-block" id="clear-btn"  type="button">Clear All</button>
+        </div>
+    </div>
+    <script src="./bootstrap.js"></script>
+</body>
+</html>
